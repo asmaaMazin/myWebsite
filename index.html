@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My CV</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showPage('personal-info')">Personal Info</a>
+        <a href="#" onclick="showPage('education')">Education</a>
+        <a href="#" onclick="showPage('skills')">Skills</a>
+    </nav>
+    <div class="hero">
+        <h2>Welcome to My CV</h2>
+        <p>Explore my professional journey and skills</p>
+    </div>
+    <div class="container">
+     
+        <div id="personal-info" class="page active">
+            <section>
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> Asmaa Mazin Ismale</p>
+                <p><strong>Email:</strong> asmaa.mazin@ukh.edu.krd</p>
+            </section>
+        </div>
+        <div id="education" class="page">
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Degree:</strong> Student in department of Computer Science and Enigneering</li>
+                    <li><strong>Institution:</strong> UKH University</li>
+                    <li><strong>Year:</strong> 2022-present</li>
+                </ul>
+            </section>
+        </div>
+       
+        <div id="skills" class="page">
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML, CSS</li>
+                    <li>C++, Java, MySQL</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Asmaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
