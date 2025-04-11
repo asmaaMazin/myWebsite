@@ -1,9 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #aec05ce9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+
+.hero {
+    background: linear-gradient(to right, #240453, #06327d);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+footer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+   
+}
+
+button {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+/* Style for page0 */
+.page0 {
+    display: block;
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #006064; /* Dark cyan text */
+}
+
+/* Hide page0 when navigating to other pages 
+.page:not(.active) .page0 {
+    display: none;
+}*/
+.page, .page0 {
+    display: none;
+}
+
+/* Show selected page */
+.page.active {
+    display: block;
+}
+
+/* Show page0 by default */
+.page0.active {
+    display: block;
+}
+
+/*
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     
-    color: #003366; /* Dark blue text */
+    color: #003366; /* Dark blue text 
     display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,15 +143,15 @@ body {
 }
 
 header {
-    background-color: #004080; /* Deep blue */
+    background-color: #004080; /* Deep blue 
     color: white;
-    padding: 20px;
+    padding: 1em 0;
     text-align: center;
     width: 100%;
 }
 
 nav {
-    background-color: #0059b3; /* Medium blue */
+    background-color: #0059b3; /* Medium blue 
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -43,14 +171,13 @@ nav a:hover {
 }
 
 .hero {
-    background-color: #cce6ff; /* Light blue */
+    background-color: #cce6ff; /* Light blue 
     text-align: center;
     padding: 50px 20px;
 }
 
 .container {
-    padding: 20px;
-    width: 80%;
+    padding:  40px 20px;
 }
 
 .page {
@@ -62,31 +189,30 @@ nav a:hover {
 }
 
 footer {
-    background-color: #001f3f; /* Dark blue color */
+    background-color: #001f3f; /* Dark blue color 
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1em 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Shadow to give a depth effect */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Shadow to give a depth effect 
     z-index: -1;
     
     
 
    /* padding: 10px 0;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Shadow to give a depth effect */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Shadow to give a depth effect 
    /* position: relative;
-    z-index: -1; /* Makes it appear in the back */
+    z-index: -1; /* Makes it appear in the back *
    
 }
 
 
 section h2 {
-    color: #003366; /* Dark blue */
+    color: #003366; /* Dark blue 
 }
 
 ul {
     list-style-type: square;
     color: #003366; /* Dark blue */
-}

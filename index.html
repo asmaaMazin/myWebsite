@@ -1,7 +1,8 @@
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%; margin: 0;">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,24 +13,31 @@
 </head>
 <body>
     <header>
-        <h1>My CV</h1>
+        <h1>
+            <div class="hero">
+            <h2>Welcome to My CV</h2>
+        </div></h1>
     </header>
     <nav>
+        <a href="#" onclick="showPage('home-paragraph')">Home</a>
         <a href="#" onclick="showPage('personal-info')">Personal Info</a>
         <a href="#" onclick="showPage('education')">Education</a>
         <a href="#" onclick="showPage('skills')">Skills</a>
     </nav>
-    <div class="hero">
-        <h2>Welcome to My CV</h2>
-        <p>Explore my professional journey and skills</p>
-    </div>
+    
+    
     <div class="container">
      
-        <div id="personal-info" class="page active">
+        <div id="home-paragraph" class="page0">
+            <section>
+                <p>Welcome to my personal CV website. Here you can find information about my background, education, and skills. Feel free to explore!</p>
+            </section>
+        </div>
+        <div id="personal-info" class="page">
             <section>
                 <h2>Personal Information</h2>
-                <p><strong>Name:</strong> Asmaa Mazin Ismale</p>
-                <p><strong>Email:</strong> asmaa.mazin@ukh.edu.krd</p>
+                <p><strong>Name:</strong> </p>
+                <p><strong>Email:</strong> </p>
             </section>
         </div>
         <div id="education" class="page">
