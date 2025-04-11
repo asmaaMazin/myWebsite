@@ -1,4 +1,6 @@
 /* Reset some default styles */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,23 +14,21 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #aec05ce9;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+
 
 nav {
-    background-color: #444;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-radius: 8px;
+    background-color: #e6d198;
     padding: 10px 0;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
+    color: #21316d;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1rem;
@@ -36,15 +36,23 @@ nav a {
 }
 
 nav a:hover {
-    color: #f4a261;
+    color: #fffcfc;
 }
 
 
 .hero {
+    
+    width: 70%;
+    margin: 50px auto;
+  
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     background: linear-gradient(to right, #240453, #06327d);
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+
 }
 
 .hero h1 {
@@ -65,46 +73,40 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+ .container{
+    color: #21316d;
+    font-size: 1.2rem;
 
+}
 footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
     width: 50%;
-    background-color: #333;
+    background: linear-gradient(to right, #240453, #06327d);
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
     position: relative;
-    bottom: 0;
+   
    
 }
 
-button {
-    background-color: #2575fc;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-button:hover {
-    background-color: #6a11cb;
-}
+
 /* Style for page0 */
 .page0 {
     display: block;
-    background-color: #e0f7fa; /* Light cyan background */
+     /* Light cyan background */
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     font-size: 1.2rem;
-    color: #006064; /* Dark cyan text */
+    color: #21316d; 
 }
 
 /* Hide page0 when navigating to other pages 
