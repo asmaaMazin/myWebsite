@@ -6,7 +6,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@media (max-width: 768px) {
+    .container {
+      width: 90%;
+      font-size: 1rem;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .hero {
+      padding: 50px 10px;
+    }
+  }
+  
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
@@ -72,10 +87,13 @@ nav a:hover {
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
- .container{
+    display: flex;
+  flex-direction: column;
     color: #21316d;
     font-size: 1.2rem;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
 }
 footer {
@@ -95,7 +113,10 @@ footer {
    
 }
 
-
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 /* Style for page0 */
 .page0 {
